@@ -1,5 +1,6 @@
 FROM ethereum/client-go:v1.6.5
-
+ENV http_proxy=http://webproxy.comp.db.de:8080
+ENV https_proxy=http://webproxy.comp.db.de:8080
 RUN apk update &&\
     apk add git nodejs bash perl
 
