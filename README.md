@@ -93,3 +93,16 @@ To speed up the process, you can use a pre-generated DAG. All you need to do is 
 ADD dag/full-R23-0000000000000000 /root/.ethash/full-R23-0000000000000000
 ```
 to the monitored-geth-client Dockerfile.
+
+## 3. Interact with swarm
+
+You can add files to swarm with 
+```
+swarm up <filename>
+```
+
+and afterwards you can download the file with a http request on port 8500:
+```
+http://localhost:8500/bzz:/c5cca2b6d692c13e497bbf5d6d9399e2e3c1693e34c32129c7dbc85361147821/
+```
+
